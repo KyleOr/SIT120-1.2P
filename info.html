@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .column {
+      width: 50%;
+      float: left;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .column {
+        width: 100%;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="column" style="background-color: lightblue;">Column 1</div>
+    <div class="column" style="background-color: lightgreen;">Column 2</div>
+  </div>
+</body>
+</html>

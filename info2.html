@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Concepts</title>
+</head>
+<body>
+
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="greetUser()">Greet</button>
+
+  <script>
+    // String methods
+    const text = 'Hello, World!';
+    console.log(text.length);             // String length
+    console.log(text.toUpperCase());      // Convert to uppercase
+    console.log(text.indexOf('World'));   // Find index of substring
+    console.log(text.substring(0, 5));    // Substring extraction
+    console.log(text.split(','));         // Split into an array
+
+    // Number methods
+    const number = 42.75;
+    console.log(number.toFixed(1));       // Convert to string with fixed decimal places
+    console.log(number.toString());       // Convert to string
+    console.log(Number.isInteger(number)); // Check if a number is an integer
+    console.log(Math.floor(number));       // Round down
+    console.log(Math.max(10, 20, 30));    // Find the maximum value
+
+    // Array methods
+    const fruits = ['apple', 'banana', 'cherry'];
+    console.log(fruits.length);                    // Array length
+    console.log(fruits.join(', '));                // Join array elements with a separator
+    console.log(fruits.indexOf('banana'));         // Find index of element
+    console.log(fruits.slice(1, 3));               // Extract a portion of an array
+    console.log(fruits.concat(['date', 'fig']));  // Concatenate arrays
+
+    // Date methods
+    const now = new Date();
+    console.log(now.getFullYear());                // Get year
+    console.log(now.getMonth() + 1);               // Get month (0-11)
+    console.log(now.getDate());                    // Get day of the month
+    console.log(now.getHours());                   // Get hours
+    console.log(now.getMinutes());                 // Get minutes
+
+    // Function methods
+    
+    function greet(name) {
+      console.log(`Hello, ${name}!`);
+    }
+
+    function greetUser() {
+      const name = document.getElementById('nameInput').value;
+      greet(name);
+    }
+  </script>
+</body>
+</html>
